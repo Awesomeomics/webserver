@@ -1,0 +1,155 @@
+body {
+	display: block;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+/* unvisited link */
+a:link {
+    color: #e09999;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #e09999;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #e09999;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: #e09999;
+    text-decoration: none;
+}
+
+.subtitletext {
+	color: #84be98;
+}
+
+.translucentbackground {
+	background-color: rgba(255,255,255,.5);
+	background-size: cover;
+	height: 100%;
+}
+
+.jumbotron {
+	background: url('http://upload.wikimedia.org/wikipedia/commons/b/b0/Guava_bangalore.jpg');
+	margin: auto auto;
+	background-size: cover;
+	padding: 0;
+	height: 100%;
+
+}
+
+.aLittlePadding {
+	padding-top: 10px;
+}
+
+.redborder {
+    border:2px solid #f96145;
+    border-radius:2px;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: normal;
+}
+
+
+.row {
+    padding: 0px;
+}
+
+.bigicon {
+    font-size: 97px;
+    color: #f96145;
+}
+
+.contcustom {
+    text-align: center;
+    width: 400px;
+    border-radius: 0.5rem;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #fbfbf9;
+    padding: 20px;
+    padding-bottom: 35px;
+    position: relative;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 17px;
+    padding: 15px;
+    background-color: #ECF4F4;
+    border-radius: 2px;
+    border: none;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #ABABAB;
+}
+
+.med {
+    font-size: 27px;
+    color: white;
+}
+
+.medhidden {
+    font-size: 27px;
+    color: #f96145;
+    padding: 10px;
+    width:100%;
+}
+
+.wide {
+    background-color: #8EB7E4;
+    width: 100%;
+    -webkit-border-top-right-radius: 0;
+    -webkit-border-bottom-right-radius: 0;
+    -moz-border-radius-topright: 0;
+    -moz-border-radius-bottomright: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.homepagebutton {
+	background-color: #fbfbf9;
+	color: #e09999;
+	font-size: 15;
+	border: 2px;
+	border-radius: 0.2rem;
+	border-color: #84be98;
+	border-style: solid;
+    margin: 0;
+    padding: 8px;
+}
+
+.homepagebutton:hover{
+    background-color: #F5FFF5;
+    color: #e09999;
+}
+
+.form-input{
+    border-radius:5px !important;
+}
+
+.index-form{
+    padding-top:5px;
+    margin-bottom:-5px;
+}

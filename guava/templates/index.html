@@ -1,5 +1,20 @@
-<form action="/login" method='POST'>
-	<input type="email" name="email"/>
-	<input type="password" name="password"/>
-	<input type="submit" name="submit"/>
-</form>
+{% extends 'base.html' %}
+{% block body %}
+	<div class="jumbotron">
+		<div class="container translucentbackground">
+			<div id="contentdiv" class="contcustom">
+				<span class="fa fa-spinner bigicon"></span>
+				<div class="container aLittlePadding"> <img src="img/navbar.png"> </div>
+				<div class="container subtitletext aLittlePadding"> Genomic, User-Accessible Variant Annotation </div>
+				<form method="POST" action="/login" enctype="multipart/form" name="indexForm" novalidate class="index-form">
+					<input ng-model="email" name="email" id="email" class="form-input" type="email" placeholder="email">
+					<input ng-model="password" name="password" id="password" class="form-input" type="password" placeholder="password">
+
+
+					<input style="width:61px;height:38px;" type="submit" class="btn btn-default btn-lg homepagebutton" value="Log in"/>
+					<button id="registerButton" class="btn btn-default btn-lg homepagebutton"><a target="_self" href="signup">Make a new account</a></button>
+				</form>
+			</div>
+		</div>
+	</div>
+{% endblock %}

@@ -1,10 +1,10 @@
 /* COLORSCHEME 
 cream: #fbfbf9
+cream2: #fef2ea
 grey: #323131
 dark grey: #262424
 pink:#e09999
 green: #84be98
-
 
 */
 
@@ -49,11 +49,12 @@ body {
   font-size: 100%; }
 
 body {
+  overflow:hidden;
   background: #323131;
   color: #262424;
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: 'Oxygen', sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 150%;
@@ -69,6 +70,14 @@ img {
 
 img {
   -ms-interpolation-mode: bicubic; }
+
+
+
+#sidenav {
+  background-color:#282626;
+  padding:6px;
+  width:100%;
+}
 
 #map_canvas img,
 #map_canvas embed,
@@ -109,12 +118,15 @@ select {
   width: 100%; }
 
 .row {
-  width: 100%;
+  width: 100%;  
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 62.5rem; }
+  max-width: 120rem;
+  max-height:100%;
+   }
+
   .row:before, .row:after {
     content: " ";
     display: table; }
@@ -645,7 +657,7 @@ select {
 
   .push-2 {
     position: relative;
-    left: 16.66667%;
+    left: 13.9%;
     right: auto; }
 
   .pull-2 {
@@ -765,7 +777,7 @@ select {
 
   .large-push-2 {
     position: relative;
-    left: 16.66667%;
+    left: 13.9%;
     right: auto; }
 
   .large-pull-2 {
@@ -874,7 +886,7 @@ select {
     width: 8.33333%; }
 
   .large-2 {
-    width: 16.66667%; }
+    width: 13.9%; }
 
   .large-3 {
     width: 25%; }
@@ -898,7 +910,7 @@ select {
     width: 75%; }
 
   .large-10 {
-    width: 83.33333%; }
+    width: 86.8%; }
 
   .large-11 {
     width: 91.66667%; }
@@ -985,7 +997,7 @@ select {
 
   .push-1 {
     position: relative;
-    left: 8.33333%;
+    left: %;
     right: auto; }
 
   .pull-1 {
@@ -995,7 +1007,7 @@ select {
 
   .push-2 {
     position: relative;
-    left: 16.66667%;
+    left: 13.9%;
     right: auto; }
 
   .pull-2 {
@@ -1096,7 +1108,7 @@ button, .button {
   border-style: solid;
   border-width: 0px;
   cursor: pointer;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: 'Oxygen', sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -1112,11 +1124,11 @@ button, .button {
   padding-left: 2rem;
   font-size: 1rem;
   background-color: ##84be98;
-  border-color: #007095;
+  border-color: #84be98;
   color: white;
   transition: background-color 300ms ease-out; }
   button:hover, button:focus, .button:hover, .button:focus {
-    background-color: #007095; }
+    background-color: #84be98; }
   button:hover, button:focus, .button:hover, .button:focus {
     color: white; }
   button.secondary, .button.secondary {
@@ -1177,13 +1189,13 @@ button, .button {
     border-radius: 1000px; }
   button.disabled, button[disabled], .button.disabled, .button[disabled] {
     background-color: ##84be98;
-    border-color: #007095;
+    border-color: #84be98;
     color: white;
     cursor: default;
     opacity: 0.7;
     box-shadow: none; }
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
-      background-color: #007095; }
+      background-color: #84be98; }
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
       color: white; }
     button.disabled:hover, button.disabled:focus, button[disabled]:hover, button[disabled]:focus, .button.disabled:hover, .button.disabled:focus, .button[disabled]:hover, .button[disabled]:focus {
@@ -1378,7 +1390,7 @@ meta.foundation-mq-topbar {
       color: white;
       padding: 12px 0 12px 0;
       padding-left: 15px;
-      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+      font-family: 'Oxygen', sans-serif;
       font-size: 0.8125rem;
       font-weight: normal;
       text-transform: none; }
@@ -1387,10 +1399,10 @@ meta.foundation-mq-topbar {
         padding-right: 15px;
         padding-left: 15px;
         background-color: ##84be98;
-        border-color: #007095;
+        border-color: #84be98;
         color: white; }
         .top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.button:focus {
-          background-color: #007095; }
+          background-color: #84be98; }
         .top-bar-section ul li > a.button:hover, .top-bar-section ul li > a.button:focus {
           color: white; }
       .top-bar-section ul li > a.button.secondary {
@@ -1422,10 +1434,10 @@ meta.foundation-mq-topbar {
       padding-right: 15px;
       padding-left: 15px;
       background-color: ##84be98;
-      border-color: #007095;
+      border-color: #84be98;
       color: white; }
       .top-bar-section ul li > button:hover, .top-bar-section ul li > button:focus {
-        background-color: #007095; }
+        background-color: #84be98; }
       .top-bar-section ul li > button:hover, .top-bar-section ul li > button:focus {
         color: white; }
       .top-bar-section ul li > button.secondary {
@@ -2349,7 +2361,7 @@ meta.foundation-mq-topbar {
     color: #eeeeee;
     font-weight: normal;
     font-size: 1rem;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+    font-family: 'Oxygen', sans-serif; }
   .pricing-table .price {
     background-color: #f6f6f6;
     padding: 0.9375rem 1.25rem;
@@ -2357,7 +2369,7 @@ meta.foundation-mq-topbar {
     color: #333333;
     font-weight: normal;
     font-size: 2rem;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+    font-family: 'Oxygen', sans-serif; }
   .pricing-table .description {
     background-color: white;
     padding: 0.9375rem;
@@ -2913,11 +2925,11 @@ td {
 
 /* Default Link Styles */
 a {
-  color: ##84be98;
+  color: #84be98;
   text-decoration: none;
   line-height: inherit; }
   a:hover, a:focus {
-    color: #0078a0; }
+    color: #e09999; }
   a img {
     border: none; }
 
@@ -2939,7 +2951,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: 'Oxygen', sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #262424;
@@ -2953,7 +2965,8 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 0; }
 
 h1 {
-  font-size: 2.125rem; }
+  font-size: 2.125rem; 
+  color:#e09999; }
 
 h2 {
   font-size: 1.6875rem; }
@@ -3177,6 +3190,8 @@ blockquote p {
 
   thead {
     display: table-header-group;
+    background-color:#222222;
+    color:white;
     /* h5bp.com/t */ }
 
   tr,
@@ -3228,7 +3243,7 @@ blockquote p {
       background-color: #efefef;
       color: #262424;
       padding: 1rem 2rem;
-      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+      font-family: 'Oxygen', sans-serif;
       font-size: 1rem; }
       .tabs dd > a:hover, .tabs .tab-title > a:hover {
         background-color: #e1e1e1; }
@@ -3338,18 +3353,22 @@ ul.pagination {
     display: inline-block; }
 
 .side-nav {
+  position:fixed;
+  width:14.66667%;
+  background-color:#262424;
   display: block;
+  height:100%;
   margin: 0;
-  padding: 0.875rem 0;
+  padding: 0rem 0;
   list-style-type: none;
   list-style-position: outside;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+  font-family: 'Oxygen', sans-serif; }
   .side-nav li {
     margin: 0 0 0.4375rem 0;
     font-size: 0.875rem; }
     .side-nav li a:not(.button) {
       display: block;
-      color: ##84be98;
+      color: #84be98;
       margin: 0;
       padding: 0.4375rem 0.875rem; }
       .side-nav li a:not(.button):hover, .side-nav li a:not(.button):focus {
@@ -3358,7 +3377,7 @@ ul.pagination {
     .side-nav li.active > a:first-child:not(.button) {
       color: #1cc7ff;
       font-weight: normal;
-      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; }
+      font-family: 'Oxygen', sans-serif; }
     .side-nav li.divider {
       border-top: 1px solid;
       height: 0;
@@ -3366,7 +3385,7 @@ ul.pagination {
       list-style: none;
       border-top-color: white; }
     .side-nav li.heading {
-      color: ##84be98;
+      color: #84be98;
       font-size: 0.875rem;
       font-weight: bold;
       text-transform: uppercase; }
@@ -3388,7 +3407,7 @@ ul.pagination {
       color: #262424;
       padding: 1rem;
       display: block;
-      font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+      font-family: 'Oxygen', sans-serif;
       font-size: 1rem; }
       .accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
         background: #e3e3e3; }
@@ -3502,7 +3521,7 @@ ul.pagination {
   top: 0;
   border-radius: 3px;
   left: 0;
-  background-color: white;
+  background-color: #fef2ea;
   padding: 1.25rem;
   border: solid 1px #666666;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
@@ -3903,7 +3922,7 @@ dialog::backdrop {
     display: inline;
     margin-left: 1rem;
     margin-bottom: 0.625rem;
-    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-family: 'Oxygen', sans-serif;
     font-weight: normal;
     font-size: 0.875rem;
     color: #999999; }
@@ -4086,8 +4105,9 @@ dialog::backdrop {
       left: -20px;
       right: auto; } }
 .label {
+  width:100%;
   font-weight: normal;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-family: 'Oxygen', sans-serif;
   text-align: center;
   text-decoration: none;
   line-height: 1;
@@ -4097,8 +4117,8 @@ dialog::backdrop {
   margin-bottom: inherit;
   padding: 0.25rem 0.5rem 0.375rem;
   font-size: 0.6875rem;
-  background-color: ##84be98;
-  color: white; }
+  background-color: #84be98;
+  color: #e09999; }
   .label.radius {
     border-radius: 3px; }
   .label.round {
@@ -4216,6 +4236,7 @@ dialog::backdrop {
 .left-off-canvas-menu {
   -webkit-backface-visibility: hidden;
   width: 15.625rem;
+  height:100%;
   top: 0;
   bottom: 0;
   position: absolute;
@@ -4231,7 +4252,7 @@ dialog::backdrop {
   -ms-transform: translate3d(-100.5%, 0, 0);
   -o-transform: translate3d(-100.5%, 0, 0);
   transform: translate3d(-100.5%, 0, 0);
-  left: 0; }
+  left: 0; } 
   .left-off-canvas-menu * {
     -webkit-backface-visibility: hidden; }
 
@@ -4822,7 +4843,7 @@ form .row textarea.columns {
 /* Label Styles */
 label {
   font-size: 0.875rem;
-  color: #4d4d4d;
+  color: #e09999;
   cursor: pointer;
   display: block;
   font-weight: normal;

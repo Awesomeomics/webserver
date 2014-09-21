@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="jumbotron">
+<div class="container translucentbackground" ng-controller="IndexCtrl">
+
+        <div id="contentdiv" class="contcustom">
+            <span class="fa fa-spinner bigicon"></span>
+            <div class="container aLittlePadding"> <img src="img/navbar.png"> </div>
+            <div class="container aLittlePadding subtitletext"> Genomic, User-Accessible Variant Annotation </div>
+            <form method="POST" action="/signup" enctype="multipart/form" name="signupForm" novalidate class="index-form">
+                <input ng-model="firstname" name="firstname" id="firstname" type="text" placeholder="firstname" class="form-input">
+                <input ng-model="lastname" name="lastname" id="lastname" type="text" placeholder="lastname" class="form-input">
+                <input ng-model="email" name="email" id="email" type="email" placeholder="email" class="form-input">
+                <input ng-model="password" name="password" id="password" type="password" placeholder="password" class="form-input">
+                <button id="logInButton" class="btn btn-default btn-lg homepagebutton"><a target="_self" href="/">Log in</a></button>
+                <input style="width:159px;"type="submit" id="registerButton" class="btn btn-default btn-lg homepagebutton" value="Make a new account"/>
+            </div>
+        </div>
+</div>
+</div>
+{% endblock %}

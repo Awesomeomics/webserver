@@ -23,10 +23,10 @@ class GuavaAPI:
 
     def login(self, email, password):
         payl =  {'email': email, 'password': password}
-        return _post_request('auth/email', payl)
+        return self._post_request('auth/email', payl)
 
     def signup(self, firstname, lastname, email, password):
         payl = {'firstname': firstname, 'lastname': lastname,
                 'email': email, 'password': password}
 
-        return _post_request('client', payl)
+        return self._post_request('client', payl)

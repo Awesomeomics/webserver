@@ -30,7 +30,8 @@ app.api = GuavaAPI()
 def index():
 
 	if session.get('client'):
-		return render_template('app.html')
+		print session['client']
+		return render_template('app.html', access_token=session['client']['access_token'])
 
 	error = session.get('error')
 	if error:
@@ -52,7 +53,7 @@ def login():
 	if not email or not password:
 		return redirect('/')
 
-	access_token, err = app.api.login(email, password)
+	err, access_token = app.api.login(email, password)
 	if err:
 		session['error'] = 'invalid credentials'
 	else:
@@ -60,15 +61,26 @@ def login():
 
 	return redirect('/')
 
-@app.route('/logout', methods=['POST'])
+@app.route('/logout', methods=['GET'])
 def logout():
 	session['client'] = None
 	return redirect('/')
 
 
-@app.route('/signup', methods=['POST'])
+@app.route('/signup', methods=['GET', 'POST'])
 def signup():
-	
+
+	print 'SIGNING UP'
+
+	if session.get('client'):
+		return redirect('/')
+
+	if request.method == 'GET':
+		error = session.get('error')
+		if error:
+			session['error'] = None
+		return render_template('register.html', error=error)
+
 	data = request.form
 	if not data:
 		return redirect('/')
@@ -78,10 +90,15 @@ def signup():
 	firstname = data.get('firstname')
 	lastname = data.get('lastname')
 
+	print email
+	print password
+	print firstname
+	print lastname
+
 	if not email or not password or not firstname or not lastname:
 		return redirect('/')
 
-	access_token, err = app.api.signup(firstname, lastname, email, password)
+	err, access_token = app.api.signup(firstname, lastname, email, password)
 	if err:
 		session['error'] = 'unable to signup, please try again'
 	else:
